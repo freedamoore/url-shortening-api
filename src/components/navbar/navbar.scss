@@ -1,13 +1,84 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: pink;
+    &__logo{
+        text-align: left;
+    }
+
+    &__dropdown{
+        background-color: red;
+        width: 80%;
+    }
+
+    /*Hide checkbox - this "invisible" checkbox is used to toggle the menu on smaller screens*/
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox:checked ~ &__main-menu{
+        display: block;
+    }
+
+    &__menu-toggle {
+        display: none;
+        padding: 2rem;
+        text-align: end;
+    }
+
+    &__main-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &--1{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            width: 70%;
+        }
+
+        &--2{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            width: 30%;
+        }
+    }
+
+    &__main-menu a {
+        color: white;
+        text-decoration: none;
+    }
 
 
-/* Screen reader only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-  }
+    @media only screen and (max-width: 600px){
+
+        &__dropdown{
+            position: relative;
+        }
+
+        &__menu-toggle {
+          display: block;
+        }
+
+        &__main-menu{
+            background-color: var(--color-primary-2);
+            border-radius: 10px;
+            display: none;
+            position: absolute;
+            width: 130%;
+            z-index: 20;
+            transform: translateX(-25%);
+
+            &--1, &--2{
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+}
+
+

@@ -3,29 +3,31 @@ import './navbar.scss';
 
 const Navbar = () => {
     return(
-        <header className="nav">
-            <h1 class="logo">Shortly</h1>
-            <a href="#main-menu" id="main-menu-toggle"class="menu-toggle" aria-label="Open main menu">
-                <span class="sr-only">Open main menu</span>
-                <span class="fa fa-bars" aria-hidden="true"></span>
-            </a>          
+        <header className="navigation">
+
+            <h1 className="navigation__logo">Shortly</h1>   
             
-            <nav id="main-menu" class="main-menu" aria-label="Main menu">
-                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-                <span class="sr-only">Close main menu</span>
-                <span class="fa fa-close" aria-hidden="true"></span>
-                </a>
-                <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Resources</a></li>
-                </ul>
-                <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
-                </ul>
-            </nav>
-            {/* <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a> */}
+            <div className="navigation__dropdown">
+
+                <label for="nav-show-menu" className="navigation__menu-toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="nav-show-menu" className="navigation__checkbox" role="button" />
+
+                <nav className="navigation__main-menu">
+
+                    <ul className="navigation__main-menu--1">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+
+                    <ul className="navigation__main-menu--2">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
         </header>
     );
 }
