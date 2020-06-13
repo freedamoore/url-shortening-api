@@ -1,11 +1,12 @@
 import React from 'react';
 import './navbar.scss';
+import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
     return(
-        <header className="navigation">
-
-            <h1 className="navigation__logo">Shortly</h1>   
+        <header className="navigation">         
+         
+         <img src={logo} alt="logo" className="navigation__logo"></img>
             
             <div className="navigation__dropdown">
 
