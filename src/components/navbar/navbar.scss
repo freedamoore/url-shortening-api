@@ -44,11 +44,10 @@
 
         &--2{
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             list-style: none;
             width: 30%;
         }
-
     }
 
     &__main-menu a {
@@ -86,11 +85,11 @@
         padding: 3rem 1rem;
 
         &__main-menu a {
-            margin-left: 1rem;
+            margin-left: 1.5rem;
         }
 
         #signup-btn{
-            padding: 0.7rem 1.5rem;
+            padding: 0.7rem 1.2rem;
         }
     }
 
@@ -109,21 +108,48 @@
             border-radius: 10px;
             display: none;
             position: absolute;
-            width: 130%;
+            padding: 2rem;
+            width: 100%;
             z-index: 20;
-            transform: translateX(-25%);
-
+            transform: translateX(-10%);
+           
             &--1, &--2{
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
             }
+
+            &--1{
+                padding-bottom: 2rem;
+            }
+
+            &--2{
+                border-top: 1px solid var(--color-neutral-2);
+                padding-top: 2rem;
+            }
+        }
+
+        &__main-menu li{
+            width: 100%;
+            text-align: center;
         }
 
         &__main-menu a {
             color: white;            
+            display: block;
+            line-height: 30px;
+            margin: 0.5rem;
+            
+        }
+
+        &__main-menu a:hover {
+            color: white;
+            background-color: var(--color-neutral-2);
         }
     }
 }
 
-
+.fa-bars{
+    color: var(--color-neutral-2);
+    font-size: 25px;
+}
