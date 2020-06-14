@@ -6,7 +6,7 @@ const Navbar = () => {
     return(
         <header className="navigation">         
          
-         <img src={logo} alt="logo" className="navigation__logo"></img>
+            <img src={logo} alt="logo" className="navigation__logo"></img>
             
             <div className="navigation__dropdown">
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
                     <ul className="navigation__main-menu--2">
                         <li><a href="#">Login</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#" id="signup-btn">Sign Up</a></li>
                     </ul>
 
                 </nav>

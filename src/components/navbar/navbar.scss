@@ -4,17 +4,15 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: pink;
+    padding: 3rem 6rem;
 
     &__logo{
-        font-size: 1.8rem;
-        font-weight: 700;
+        width: 10rem;
         text-align: left;
     }
 
     &__dropdown{
-        background-color: red;
-        width: 80%;
+        flex-grow: 1;
     }
 
     /*Hide checkbox - this "invisible" checkbox is used to toggle the menu on smaller screens*/
@@ -39,7 +37,7 @@
         
         &--1{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             list-style: none;
             width: 70%;
         }
@@ -50,16 +48,54 @@
             list-style: none;
             width: 30%;
         }
+
     }
 
     &__main-menu a {
-        color: white;
+        color: var(--color-neutral-2);
+        font-size: 1.3rem;
+        font-weight: 700;
         text-decoration: none;
+        margin-left: 5rem;
     }
 
+    &__main-menu a:hover {
+        color: var(--color-neutral-3);
+    }    
+
+    #signup-btn{
+        background-color: var(--color-primary-1);
+        border-radius: 30px;
+        color: white;
+        padding: 0.7rem 2rem;
+    }
+
+    #signup-btn:hover{
+        filter: brightness(120%);
+    }
+
+    @media only screen and (max-width: 1100px){
+        padding: 3rem 2rem;
+
+        &__main-menu a {
+            margin-left: 3rem;
+        }
+    }
+
+    @media only screen and (max-width: 900px){
+        padding: 3rem 1rem;
+
+        &__main-menu a {
+            margin-left: 1rem;
+        }
+
+        #signup-btn{
+            padding: 0.7rem 1.5rem;
+        }
+    }
 
     @media only screen and (max-width: 600px){
-
+       
         &__dropdown{
             position: relative;
         }
@@ -79,8 +115,13 @@
 
             &--1, &--2{
                 flex-direction: column;
+                align-items: center;
                 width: 100%;
             }
+        }
+
+        &__main-menu a {
+            color: white;            
         }
     }
 }

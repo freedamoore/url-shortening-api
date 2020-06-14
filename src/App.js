@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-     
+     <p> Some temporary text here just to test the size and appearance</p>
       <form>
         <input type='url' id='url'></input>
         <input type="submit" value="Shorten it!" onClick={ handleSubmit }></input>
