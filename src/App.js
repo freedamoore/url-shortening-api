@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar/navbar';
+import Header from './components/header/header';
 
 function App() {
   const [shortUrl, setShortUrl] = useState('');
@@ -32,7 +33,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-     <p> Some temporary text here just to test the size and appearance</p>
+      <Header />
+     
       <form>
         <input type='url' id='url'></input>
         <input type="submit" value="Shorten it!" onClick={ handleSubmit }></input>
