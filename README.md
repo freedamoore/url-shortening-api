@@ -2,6 +2,8 @@
 
 # CURRENTLY A WORK IN PROGRESS.....
 
+For my solution I am using create react app, BEM methodology with SCSS for styling, React hooks for state management.
+
 
 
 # Frontend Mentor - Shortly URL shortening API Challenge
