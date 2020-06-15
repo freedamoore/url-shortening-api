@@ -25,6 +25,19 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* 18px; */
   color: var(--color-neutral-4);
+
 }
 
 
+/* add some extra padding for big screens to make it look nicer */
+@media only screen and (min-width: 1400px){
+  body{
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  body{
+    padding: 0 20rem;
+  }
+}
