@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
+import Form from './components/form/form';
 
 function App() {
   const [shortUrl, setShortUrl] = useState('');
@@ -34,13 +35,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-     
-      <form>
-        <input type='url' id='url'></input>
-        <input type="submit" value="Shorten it!" onClick={ handleSubmit }></input>
-      </form>
-      <p>{inputUrl}</p>
-      <p>{shortUrl}</p>
+      <Form inputUrl={inputUrl} shortUrl={shortUrl} handleSubmit={handleSubmit} />
+   
     </div>
   );
 }

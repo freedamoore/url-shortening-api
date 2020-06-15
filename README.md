@@ -1,4 +1,4 @@
-# My Solution to the below Frontend Mentor Challenge using create-react-app
+# My Solution to the below Frontend Mentor Challenge
 
 # CURRENTLY A WORK IN PROGRESS.....
 
