@@ -1,0 +1,40 @@
+.card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 3rem 3rem 3rem;
+    text-align: left;
+
+    &__icon-border{
+        background-color: var(--color-primary-2);
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        transform: translateY(-50%);
+        position: relative;
+    }
+
+    &__icon{
+        width: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__heading{
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        color: var(--color-neutral-2);
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        text-align: center;
+
+        &__icon-border{
+            margin: 0 auto;
+        }
+    }
+}

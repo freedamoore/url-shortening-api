@@ -33,10 +33,13 @@ const Form = () => {
     return(
         <div className="form-container">
             <form className="form">
-                <input type='url' id='url' className="form__input"></input>
+                <input type='url' id='url' className="form__input" placeholder="Shorten a link here..."></input>
                 <input type="submit" value="Shorten it!" className="form__btn" onClick={ handleSubmit }></input>
             </form>
-            {shortUrl.length ? <FormOutput inputUrl={inputUrl} shortUrl={shortUrl} /> :null}
+            <div className="form__output">
+                {shortUrl.length ? <FormOutput inputUrl={inputUrl} shortUrl={shortUrl} /> :null}
+            </div>
+            
         </div>
     )
   

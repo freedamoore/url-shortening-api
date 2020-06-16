@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
 import Form from './components/form/form';
+import Features from './components/features/features';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Header />
       <Form />
+      <Features />
     </div>
   );
 }

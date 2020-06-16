@@ -1,12 +1,12 @@
 .form-output{
     background-color: white;
     border-radius: 10px;
+    font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
     margin: 0 6rem;
-    transform: translateY(-100%);
 
     &__inputURL{
         color: var(--color-neutral-4);
@@ -38,7 +38,7 @@
     @media only screen and (max-width: 800px){
         flex-direction: column;
         align-items: flex-start;
-        transform: translateY(-50%);
+       
 
         &__shortURL{
             border-top: 1px solid var(--color-neutral-1);
