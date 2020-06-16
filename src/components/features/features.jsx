@@ -14,12 +14,11 @@ const Features = () => {
         <div className="features">
             <h2 className="features__heading">Advanced Statistics</h2>
             <p className="features__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
-            
+            <div className="features__line"></div>
             <div className="features__cards">
-                {/* <hr className="features__line"/> */}
-                <Card heading="Brand Recognition" text={brandTxt} icon={brandIcon} /> 
-                <Card heading="Detailed Records" text={detailedTxt} icon={detailedIcon} />
-                <Card heading="Fully Customizable" text={customizableTxt} icon={customizableIcon} />
+                <div className="features__cards--1"><Card heading="Brand Recognition" text={brandTxt} icon={brandIcon} /> </div>
+                <div className="features__cards--2"><Card heading="Detailed Records" text={detailedTxt} icon={detailedIcon} /></div>
+                <div className="features__cards--3"><Card heading="Fully Customizable" text={customizableTxt} icon={customizableIcon} /></div>
             </div>
         </div>
     );
