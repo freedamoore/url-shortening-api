@@ -4,6 +4,7 @@ import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
 import Form from './components/form/form';
 import Features from './components/features/features';
+import CTA from './components/cta/cta';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Form />
       <Features />
+      <CTA />
     </div>
   );
 }
