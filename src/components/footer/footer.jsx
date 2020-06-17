@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="footer__attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="#">Freeda Moore</a>.
+                Coded by <a href="https://freedamoore.github.io/">Freeda Moore</a>.
             </div>
         </div>
     );
