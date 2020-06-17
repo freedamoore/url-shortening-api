@@ -1,0 +1,32 @@
+.footer{
+    background-color: var(--color-neutral-4);
+    color: white;
+    padding: 6rem;
+
+    &__sub-heading{
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }   
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    &__grid-item ul{
+        color: var(--color-neutral-2);
+        font-size: 1.2rem;
+        list-style: none;
+        padding-bottom: 2rem;
+    }
+
+    &__attribution {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    &__attribution a{
+        text-decoration: none;
+        color: var(--color-primary-1);
+    }
+}

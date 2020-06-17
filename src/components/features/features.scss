@@ -1,6 +1,7 @@
 .features{
     background-color: var(--color-neutral-1);
     text-align: center;
+    padding-bottom: 6rem;
     position: relative;
     z-index: -2;
     
@@ -37,6 +38,8 @@
     }
 
     @media only screen and (max-width: 800px){
+        padding-bottom: 3rem;
+
         &__text{
             color: var(--color-neutral-2);
             font-size: 1.4rem;

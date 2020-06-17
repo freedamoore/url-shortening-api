@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import Form from './components/form/form';
 import Features from './components/features/features';
 import CTA from './components/cta/cta';
+import Footer from './components/footer/footer';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Form />
       <Features />
       <CTA />
+      <Footer />
     </div>
   );
 }
