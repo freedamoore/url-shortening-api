@@ -1,6 +1,11 @@
 import React from 'react';
 import './footer.scss';
 
+import facebook from '../../assets/icon-facebook.svg';
+import twitter from '../../assets/icon-twitter.svg';
+import pinterest from '../../assets/icon-pinterest.svg';
+import instagram from '../../assets/icon-instagram.svg';
+
 const Footer = () => {
     return (
         <div className="footer">
@@ -32,6 +37,13 @@ const Footer = () => {
                         <li>Careers</li>
                         <li>Contact</li>
                     </ul>
+                </div>
+                <div className="footer__grid-item footer__social">
+                    <a href="https://www.facebook.com/"><img src={ facebook } alt="facebook__logo" className="footer__social--img"></img></a>
+                    <a href="https://twitter.com/"><img src={ twitter } alt="twitter__logo" className="footer__social--img"></img></a>
+                    <a href="https://www.pinterest.com.au/"><img src={ pinterest } alt="pinterest__logo" className="footer__social--img"></img></a>
+                    <a href="https://www.instagram.com/"><img src={ instagram } alt="instagram__log" className="footer__social--img"></img></a>
+ 
                 </div>
             </div>
             <div className="footer__attribution">
