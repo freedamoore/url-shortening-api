@@ -4,7 +4,10 @@
 
     &__img-section{
         order: 1;
-        // overflow: hidden;
+        overflow: hidden;
+        @media only screen and (min-width: 1400px){
+            overflow: visible;
+        }
       
         &--img{
             display: block;
@@ -43,4 +46,11 @@
             width: 100%;
         }
     }
+
+    @media only screen and (min-width: 1400px){
+        padding: 0 var(--margin-body-medium);
+    }
+    @media only screen and (min-width: 1600px){
+        padding: 0 var(--margin-body-large);
+    } 
 }

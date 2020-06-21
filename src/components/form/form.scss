@@ -1,11 +1,19 @@
 .form-container{
     background-color: var(--color-neutral-1);
+
+    @media only screen and (min-width: 1400px){
+        padding: 0 var(--margin-body-medium);
+    }
+    @media only screen and (min-width: 1600px){
+        padding: 0 var(--margin-body-large);
+    } 
 }
    
 .form{
     background-color: var(--color-primary-2);
     background-image: url("../../assets/bg-shorten-desktop.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     padding: 3rem;
     margin: 6rem 6rem 0 6rem;

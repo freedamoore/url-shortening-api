@@ -14,9 +14,9 @@
     &__line{
         position: absolute;
         top: 60%;
-        left: 20%;
+        left: 25%;
         border-top: 6px solid var(--color-primary-1);
-        width: 60%;
+        width: 50%;
         z-index: -1;
     }
 
@@ -65,7 +65,23 @@
             border-top: none;
             border-left: 6px solid var(--color-primary-1);
             height: 500px;
+            width: 8px;
             z-index: -1;
         }
     }
+
+    @media only screen and (max-width: 600px){
+        &__line{
+            height: 600px;
+        }
+    }
+
+    @media only screen and (min-width: 1400px){
+        padding-left: var(--margin-body-medium);
+        padding-right: var(--margin-body-medium);
+    }
+    @media only screen and (min-width: 1600px){
+        padding-left: var(--margin-body-large);
+        padding-right: var(--margin-body-large);
+    } 
 }

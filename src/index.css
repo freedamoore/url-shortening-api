@@ -6,6 +6,8 @@
   --color-neutral-2:hsl(257, 7%, 63%);
   --color-neutral-3: hsl(255, 11%, 22%);
   --color-neutral-4: hsl(260, 8%, 14%);
+  --margin-body-large: 25rem;
+  --margin-body-medium: 15rem;
 }
 
 *,
@@ -30,14 +32,14 @@ body {
 
 
 /* add some extra padding for big screens to make it look nicer */
-@media only screen and (min-width: 1400px){
+/* @media only screen and (min-width: 1400px){
   body{
-    padding: 0 10rem;
+    padding: 0 var(--margin-body-medium);
   }
 }
 
 @media only screen and (min-width: 1600px){
   body{
-    padding: 0 20rem;
+    padding: 0 var(--margin-body-large);
   }
-}
+} */

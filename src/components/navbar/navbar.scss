@@ -100,9 +100,9 @@
             display: none;
             position: absolute;
             padding: 2rem;
-            width: 100%;
+            width: 130%;
             z-index: 20;
-            transform: translateX(-10%);
+            transform: translateX(-30%);
            
             &--1, &--2{
                 flex-direction: column;
@@ -138,6 +138,16 @@
             background-color: var(--color-neutral-2);
         }
     }
+
+    @media only screen and (min-width: 1400px){
+        padding: 3rem var(--margin-body-medium);
+        // &__logo{
+        //    margin-left: 6rem;
+        // }
+    }
+    @media only screen and (min-width: 1600px){
+        padding: 3rem var(--margin-body-large);
+    } 
 }
 
 .fa-bars{
